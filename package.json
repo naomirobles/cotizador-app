@@ -1,0 +1,27 @@
+{
+  "name": "cotizador-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwind": "tailwindcss",
+    "build:css": "postcss src/style.css -o dist/style.css",
+    "start": "electron .",
+    "build": "electron-builder",
+    "dev": "electron . --enable-logging"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.2.0",
+    "electron": "^37.2.5",
+    "puppeteer": "^24.15.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "electron-builder": "^26.0.12",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.11"
+  }
+}
